@@ -22,7 +22,7 @@
 > Markdown todo-list support tag plugin for markdown-it markdown parser,
 > which showing as `<input class="markdown-todo" disabled="true" checked="true">`.
 
-> forked from: [![](https://img.shields.io/badge/akuma-markdown----it----enml----todo-blue?style=plastic&logo=appveyor)](https://github.com/akuma/markdown-it-enml-todo)
+> forked from: [![](https://img.shields.io/badge/akuma-markdown--it--enml--todo-green?style=plastic&logo=git)](https://github.com/akuma/markdown-it-enml-todo)
 
 ## Install
 

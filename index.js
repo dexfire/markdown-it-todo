@@ -3,7 +3,7 @@
 const isInline = token => token && token.type === 'inline'
 const isParagraph = token => token && token.type === 'paragraph_open'
 const isListItem = token => token && token.type === 'list_item_open'
-const startsWithTodoMarkdown = token => token && /^\[( |x|X)\]/.test(token.content)
+const startsWithTodoMarkdown = token => token && /^\[([ Xx])]/.test(token.content)
 
 function isTodoItem(tokens, index) {
   return isInline(tokens[index]) &&
@@ -30,6 +30,7 @@ function parentToken(tokens, index) {
       return i
     }
   }
+
   return -1
 }
 
@@ -43,11 +44,12 @@ function todoify(token, TokenConstructor) {
 
 function createTodoItem(token, TokenConstructor) {
   const todo = new TokenConstructor('html_inline', '', 0)
-  if (/^\[ \]/.test(token.content)) {
+  if (/^\[ ]/.test(token.content)) {
     todo.content = '<input disabled="true" class="markdown-todo"></input>'
-  } else if (/^\[(x|X)\]/.test(token.content)) {
+  } else if (/^\[(x|X)]/.test(token.content)) {
     todo.content = '<input disabled="true" checked="true" class="markdown-todo"></input>'
   }
+
   return todo
 }
 

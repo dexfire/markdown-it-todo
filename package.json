@@ -1,6 +1,6 @@
 {
   "name": "markdown-it-todo",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Markdown todo-list support tag plugin for markdown-it markdown parser, which showing as `<input class=\"markdown-todo\" disabled=\"true\" checked=\"true\">`.",
   "license": "MIT",
   "repository": "dexfire/markdown-it-todo",

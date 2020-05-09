@@ -45,9 +45,9 @@ function todoify(token, TokenConstructor) {
 function createTodoItem(token, TokenConstructor) {
   const todo = new TokenConstructor('html_inline', '', 0)
   if (/^\[ ]/.test(token.content)) {
-    todo.content = '<input disabled="true" class="markdown-todo"></input>'
+    todo.content = '<input disabled="true" type="checkbox" class="markdown-todo"></input>'
   } else if (/^\[(x|X)]/.test(token.content)) {
-    todo.content = '<input disabled="true" checked="true" class="markdown-todo"></input>'
+    todo.content = '<input disabled="true" type="checkbox" checked="true" class="markdown-todo"></input>'
   }
 
   return todo

@@ -16,9 +16,9 @@ should render todos with unordered list
 - [x] checked item 3
 .
 <ul class="task-list">
-<li class="task-list-item"><input disabled="true" class="markdown-todo"></input> unchecked item 1</li>
-<li class="task-list-item"><input disabled="true" class="markdown-todo"></input> unchecked item 2</li>
-<li class="task-list-item"><input disabled="true" checked="true" class="markdown-todo"></input> checked item 3</li>
+<li class="task-list-item"><input disabled="true" type="checkbox" class="markdown-todo"></input> unchecked item 1</li>
+<li class="task-list-item"><input disabled="true" type="checkbox" class="markdown-todo"></input> unchecked item 2</li>
+<li class="task-list-item"><input disabled="true" type="checkbox" checked="true" class="markdown-todo"></input> checked item 3</li>
 </ul>
 .
 
@@ -29,9 +29,9 @@ should render todos with ordered list
 3. [x] checked ordered 3
 .
 <ol class="task-list">
-<li class="task-list-item"><input disabled="true" class="markdown-todo"></input> unchecked ordered 1</li>
-<li class="task-list-item"><input disabled="true" class="markdown-todo"></input> unchecked ordered 2</li>
-<li class="task-list-item"><input disabled="true" checked="true" class="markdown-todo"></input> checked ordered 3</li>
+<li class="task-list-item"><input disabled="true" type="checkbox" class="markdown-todo"></input> unchecked ordered 1</li>
+<li class="task-list-item"><input disabled="true" type="checkbox" class="markdown-todo"></input> unchecked ordered 2</li>
+<li class="task-list-item"><input disabled="true" type="checkbox" checked="true" class="markdown-todo"></input> checked ordered 3</li>
 </ol>
 .
 
@@ -45,12 +45,12 @@ should only render valid todos
 -   [x] checked todo item 6
 .
 <ul class="task-list">
-<li class="task-list-item"><input disabled="true" class="markdown-todo"></input> unchecked todo item 1</li>
+<li class="task-list-item"><input disabled="true" type="checkbox" class="markdown-todo"></input> unchecked todo item 1</li>
 <li>[  ] not a todo item 2</li>
 <li>[ x] not a todo item 3</li>
 <li>[x ] not a todo item 4</li>
 <li>[ x ] not a todo item 5</li>
-<li class="task-list-item"><input disabled="true" checked="true" class="markdown-todo"></input> checked todo item 6</li>
+<li class="task-list-item"><input disabled="true" type="checkbox" checked="true" class="markdown-todo"></input> checked todo item 6</li>
 </ul>
 .
 
@@ -78,10 +78,10 @@ should render todos with nested list
 <ol>
 <li>foo
 <ul class="task-list">
-<li class="task-list-item"><input disabled="true" class="markdown-todo"></input> nested unchecked item 1</li>
+<li class="task-list-item"><input disabled="true" type="checkbox" class="markdown-todo"></input> nested unchecked item 1</li>
 <li>not a todo item 2</li>
 <li>not a todo item 3</li>
-<li class="task-list-item"><input disabled="true" checked="true" class="markdown-todo"></input> nested checked item 4</li>
+<li class="task-list-item"><input disabled="true" type="checkbox" checked="true" class="markdown-todo"></input> nested checked item 4</li>
 </ul>
 </li>
 <li>bar</li>
@@ -91,10 +91,10 @@ should render todos with nested list
 <ul>
 <li>foo
 <ul class="task-list">
-<li class="task-list-item"><input disabled="true" class="markdown-todo"></input> nested unchecked item 1</li>
-<li class="task-list-item"><input disabled="true" class="markdown-todo"></input> nested unchecked item 2</li>
-<li class="task-list-item"><input disabled="true" checked="true" class="markdown-todo"></input> nested checked item 3</li>
-<li class="task-list-item"><input disabled="true" checked="true" class="markdown-todo"></input> nested checked item 4</li>
+<li class="task-list-item"><input disabled="true" type="checkbox" class="markdown-todo"></input> nested unchecked item 1</li>
+<li class="task-list-item"><input disabled="true" type="checkbox" class="markdown-todo"></input> nested unchecked item 2</li>
+<li class="task-list-item"><input disabled="true" type="checkbox" checked="true" class="markdown-todo"></input> nested checked item 3</li>
+<li class="task-list-item"><input disabled="true" type="checkbox" checked="true" class="markdown-todo"></input> nested checked item 4</li>
 </ul>
 </li>
 </ul>
